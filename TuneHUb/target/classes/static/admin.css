@@ -1,0 +1,75 @@
+ body {
+  font-family: Arial, sans-serif;
+  background-color: #0206105c;
+  margin: 0;
+  padding: 0;
+ /*  background-image: url(https://i.pinimg.com/564x/f8/df/e3/f8dfe37d4c8c486a24de08a5100b128f.jpg);
+  background-image: url(https://wallpapers.com/images/high/cartoon-music-1920-x-1920-wallpaper-0ejjlrng40m8ytrh.webp);*/
+  background-image: url(https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8bXVzaWN8ZW58MHx8MHx8fDA%3D); 
+  /* background-image:url(https://media.istockphoto.com/id/1191818259/photo/crowd-on-a-music-festival.webp?b=1&s=170667a&w=0&k=20&c=9HuMDgqyz7-bqKQfMtmB2ZTNib8n29cGFCRtVGSGrjw=); */
+  
+  background-size: cover;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: black;
+  font-weight: 00;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+input[type="submit"] {
+  background-color: #007bff;
+  color: #050404;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#addsong:hover {
+  background-color: #55ef5f;
+  color: #f5f5f5;
+}
+#viewsong:hover {
+  background-color: chocolate;
+  
+  color: #f5f5f5;
+  
+}
+
+form:not(:last-child) {
+  margin-bottom: 20px;
+   
+}
+#createplaylist:hover{
+	background-color: black;
+	  color: #f5f5f5;
+}
+
+#viewplaylist:hover{
+	background-color:red;
+	color: #f5f5f5;
+	
+}
+form{
+	transform: scale(1.05);
+}
+
+  
+  

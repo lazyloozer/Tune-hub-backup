@@ -1,0 +1,54 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 15px;
+  text-align: left;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+audio {
+  width: 100%;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #333;
+}
+
+audio::-webkit-media-controls-play-button {
+  background-color: #fff;
+  color: #333;
+}
+
+audio::-webkit-media-controls-timeline {
+  background-color: #ddd;
+}
+
+audio::-webkit-media-controls-current-time-display {
+  color: #333;
+}
+
+audio::-webkit-media-controls-time-remaining-display {
+  color: #333;
+}
+
+audio::-webkit-media-controls-mute-button {
+  background-color: #fff;
+  color: #333;
+}
+
+audio::-webkit-media-controls-volume-slider {
+  background-color: #ddd;
+}
+
+audio::-webkit-media-controls-fullscreen-button {
+  background-color: #fff;
+  color: #333;
+}

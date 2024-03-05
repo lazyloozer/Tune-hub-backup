@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <title></title>
+    <link rel="stylesheet" href="customersongs.css">
+  </head>
+  <body>
+    <h2>Welcome To TuneHub CUSTOMER Click Below to Play Songs</h2>
+    <!-- <form action="playsongs" method="post">
+      <input type="submit" value="PLAYSONGS" />
+    </form> -->
+    
+   
+    <div th:unless="${ispremium}" class="non-premium">
+    <form action="pay" >
+      <input type="submit" value="GET PREMIUM" >
+    </form>
+    <br> <br />
+    
+    <form action="logout" >
+      <input type="submit" value="LOGOUT" >
+    </form> 
+    
+    
+    </div>
+    
+    <div th:if="${ispremium}"class="premium">
+    <table border="1">
+    <tr>
+    <th>Song Name</th>
+    <th>Song Artist</th>
+    <th>Song Genre</th>
+    <th>Play</th>
+    </tr>
+    <tr th:each="songs:${songs}">
+    <td th:text="${songs.name}"></td>
+    <td th:text="${songs.artist}"></td>
+    <td th:text="${songs.genre}"></td>
+    
+  <!--   <td th:utext="${songs.link}"></td>
+    </tr> -->
+    
+    <td>
+    <audio controls>
+    <source th:src="${songs.link}">
+    </audio>
+    </td>
+    </tr>
+    </table>
+    
+    </div>
+    
+  </body>
+</html>
